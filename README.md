@@ -1,5 +1,5 @@
 # Vehicle Rental Admin App
-This project is an admin tool to manage vehicle rentals for a start-up company. The users using this system are the admin employees of the startup who take requests from customers and enter it into the system. The types of vehicles available for rent include bicycle, bike, car, and boat.
+This project is an admin tool to manage vehicle rentals for a start-up company. The users using this system are the employees of the start-up who take requests from customers and enter it into the system. The types of vehicles available for rent include bicycle, bike, car, and boat.
 
 ## Functional requirements
 Employees should be able to,
