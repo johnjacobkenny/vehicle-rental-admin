@@ -1,4 +1,18 @@
 # Vehicle Rental Admin App
+This project is an admin tool to manage vehicle rentals for a start-up company. The users using this system are the admin employees of the startup who take requests from customers and enter it into the system. The types of vehicles available for rent include bicycle, bike, car, and boat.
+
+## Functional requirements
+Employees should be able to,
+[] add customers
+[] add rental bookings (check vehicle availability, add rental booking, reduce inventory by 1)
+[] view customer list
+[] view rental booking
+[] view vehicle inventory
+
+## Models
+1. *Customer* - Name, Phone, Email
+2. *Rental Booking* - Customer, Rental Date, Return Date (nullable), Vehicle Type
+3. *Vehicle* - Type, Quantity
 
 ## First time setup
 1. `pip install pipenv`
@@ -10,7 +24,7 @@
 
 ## Tasks
 [x] Setup pipenv
-[] In the readme, give an outline about the project and requirements
+[x] In the readme, give an outline about the project and requirements
 [] Implement the data layer
 [] Implement the cli layer
 [] Complete documentation
