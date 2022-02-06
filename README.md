@@ -20,15 +20,16 @@ Employees should be able to,
 
 ## How to run
 1. `pipenv shell`
-2. `python main.py`
+2. `python vehicle-rental-admin/main.py`
 
 ## Tasks
 - [x] Setup pipenv
 - [x] In the readme, give an outline about the project and requirements
 - [ ] Figure out project structure
 - [ ] Implement the data layer
-    - [ ] Create db connection
-    - [ ] Create models
+    - [x] Create db connection
+    - [x] Create models
+    - [x] Implement relationships
     - [ ] Test models
 - [ ] Implement the cli layer
 - [ ] Complete documentation
