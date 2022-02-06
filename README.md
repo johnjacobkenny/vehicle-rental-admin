@@ -3,11 +3,11 @@ This project is an admin tool to manage vehicle rentals for a start-up company. 
 
 ## Functional requirements
 Employees should be able to,
-[] add customers
-[] add rental bookings (check vehicle availability, add rental booking, reduce inventory by 1)
-[] view customer list
-[] view rental booking
-[] view vehicle inventory
+- [] add customers
+- [] add rental bookings (check vehicle availability, add rental booking, reduce inventory by 1)
+- [] view customer list
+- [] view rental booking
+- [] view vehicle inventory
 
 ## Models
 1. *Customer* - Name, Phone, Email
@@ -23,11 +23,11 @@ Employees should be able to,
 2. `python main.py`
 
 ## Tasks
-[x] Setup pipenv
-[x] In the readme, give an outline about the project and requirements
-[] Implement the data layer
-[] Implement the cli layer
-[] Complete documentation
-[] Push to github
-[] Implement the web api layer
-[] Implement the UI layer
+- [x] Setup pipenv
+- [x] In the readme, give an outline about the project and requirements
+- [] Implement the data layer
+- [] Implement the cli layer
+- [] Complete documentation
+- [] Push to github
+- [] Implement the web api layer
+- [] Implement the UI layer
