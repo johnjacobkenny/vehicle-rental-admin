@@ -5,9 +5,9 @@ This project is an admin tool to manage vehicle rentals for a start-up company. 
 Employees should be able to,
 - [x] add customers
 - [ ] add rental bookings (check vehicle availability, add rental booking, reduce inventory by 1)
-- [ ] view customer list
+- [x] view customer list
 - [ ] view rental booking
-- [ ] view vehicle inventory
+- [x] view vehicle inventory
 
 ## Models
 1. *Customer* - Name, Phone, Email
@@ -31,8 +31,9 @@ Employees should be able to,
     - [x] Create models
     - [x] Implement relationships
     - [ ] Test models
-- [ ] Implement the cli layer
+- [ ] Setup initial data for the database ({‘bikes’:2, ‘cycle’:3, ’car’:1, ’boat’:2})
+- [x] Implement the cli layer
 - [ ] Complete documentation
-- [ ] Push to github
+- [x] Push to github
 - [ ] Implement the web api layer
 - [ ] Implement the UI layer

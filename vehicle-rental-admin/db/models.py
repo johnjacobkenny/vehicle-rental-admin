@@ -1,7 +1,6 @@
-from re import T
-from xmlrpc.client import TRANSPORT_ERROR
 from .db import Base
-from sqlalchemy import Column, Integer, String, DateTime
+from sqlalchemy import Column, Integer, String, DateTime, ForeignKey
+
 
 class Customer(Base):
     __tablename__ = "customer"
@@ -11,14 +10,19 @@ class Customer(Base):
     phone = Column(String, nullable=False)
     email = Column(String, nullable=False)
 
+    def __repr__(self) -> str:
+        return f"{self.name}, {self.phone}, {self.email}"
+
+
 class Booking(Base):
     __tablename__ = "booking"
 
     id = Column(Integer, primary_key=True)
-    customer_id = Column(Integer, nullable=False)
+    customer_id = Column(ForeignKey("customer.id"), nullable=False)
     rental_date = Column(DateTime, nullable=False)
     return_date = Column(DateTime)
-    vehicle_type = Column(Integer, nullable=False)
+    vehicle_type_id = Column(ForeignKey("vehicle.id"), nullable=False)
+
 
 class Vehicle(Base):
     __tablename__ = "vehicle"
@@ -26,3 +30,6 @@ class Vehicle(Base):
     id = Column(Integer, primary_key=True)
     type = Column(String, nullable=False)
     quantity = Column(Integer, nullable=False)
+
+    def __repr__(self) -> str:
+        return f"{self.type}, {self.quantity}"

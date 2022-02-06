@@ -1,14 +1,6 @@
-from db import session
-from db.models import Customer
-from cli.customer import get_customer_details
+import db
+from business import get_vehicles, get_customers, handle_main_menu
 
-
-def add_customer():
-    (name, phone, email) = get_customer_details()
-
-    customer = Customer(name=name, phone=phone, email=email)
-    session.add(customer)
-    session.commit()
 
 # message = models.Messages(message="Hello world")
 
@@ -19,6 +11,13 @@ def add_customer():
 
 # instance = query.first()
 # print(instance.message)
+# add_customer()
+# add_vehicle()
 
+#3
+# get_customers()
 
-add_customer()
+#5
+# get_vehicles()
+
+handle_main_menu()
