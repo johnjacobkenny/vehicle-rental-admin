@@ -3,7 +3,7 @@ This project is an admin tool to manage vehicle rentals for a start-up company. 
 
 ## Functional requirements
 Employees should be able to,
-- [ ] add customers
+- [x] add customers
 - [ ] add rental bookings (check vehicle availability, add rental booking, reduce inventory by 1)
 - [ ] view customer list
 - [ ] view rental booking

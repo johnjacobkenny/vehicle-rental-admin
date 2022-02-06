@@ -7,7 +7,6 @@ connection = engine.connect()
 metadata = db.MetaData
 
 Base = declarative_base()
-Base.metadata.create_all(engine)
 
 Session = sessionmaker(bind = engine)
 session = Session()
