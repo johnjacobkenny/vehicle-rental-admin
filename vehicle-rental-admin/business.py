@@ -1,11 +1,24 @@
 from db import session
-from db.models import Customer, Vehicle
-from cli import get_customer_details, get_vehicle_details, print_vehicle_details, print_customer_details, menu_main
+from db.models import Customer, Vehicle, Booking
+from cli import get_customer_details, get_vehicle_details, print_vehicle_details, print_customer_details, menu_main, print_rental_details
+
 
 def handle_main_menu():
     response = 0
     while(response != 6):
         response = menu_main()
+        if response == 1:
+            add_customer()
+        elif response == 2:
+            # in progress
+            pass
+        elif response == 3:
+            get_customers()
+        elif response == 4:
+            # in progress
+            pass
+        elif response == 5:
+            get_vehicles()
 
 
 def add_customer():
@@ -38,3 +51,12 @@ def add_booking():
 
     # ask for vehicle type
     # if selected vehicle type quantity is 0, then mention that vehicle is not available, do they want to try with another vehicle, or just cancel booking
+
+    # booking = Booking(customer_id=1, rental_date=datetime.datetime.now(), return_date=None, vehicle_type_id=1)
+
+    # session.add(booking)
+    # session.commit()
+
+
+def get_rental_bookings():
+    print_rental_details(session.query(Booking).all())

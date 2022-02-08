@@ -18,10 +18,10 @@ class Booking(Base):
     __tablename__ = "booking"
 
     id = Column(Integer, primary_key=True)
-    customer_id = Column(ForeignKey("customer.id"), nullable=False)
+    customer_id = Column(Integer, ForeignKey("customer.id"), nullable=False)
     rental_date = Column(DateTime, nullable=False)
     return_date = Column(DateTime)
-    vehicle_type_id = Column(ForeignKey("vehicle.id"), nullable=False)
+    vehicle_type_id = Column(Integer, ForeignKey("vehicle.id"), nullable=False)
 
 
 class Vehicle(Base):

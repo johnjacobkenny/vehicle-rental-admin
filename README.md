@@ -25,15 +25,13 @@ Employees should be able to,
 ## Tasks
 - [x] Setup pipenv
 - [x] In the readme, give an outline about the project and requirements
-- [ ] Figure out project structure
+- [x] Figure out project structure
 - [ ] Implement the data layer
     - [x] Create db connection
     - [x] Create models
-    - [x] Implement relationships
+    - [ ] Implement relationships
     - [ ] Test models
 - [ ] Setup initial data for the database ({‘bikes’:2, ‘cycle’:3, ’car’:1, ’boat’:2})
 - [x] Implement the cli layer
-- [ ] Complete documentation
+- [x] Complete documentation
 - [x] Push to github
-- [ ] Implement the web api layer
-- [ ] Implement the UI layer
